@@ -1,0 +1,33 @@
+[
+  {
+    "create": "test",
+    "validator": {
+      "bsonType": "object",
+      "required": [
+        "testId",
+        "name"
+      ],
+      "properties": {
+        "testId": {
+          "bsonType": "string"
+        },
+        "name": {
+          "bsonType": "string"
+        }
+      }
+    }
+  },
+  {
+    "createIndexes": "testDefinitions",
+    "indexes": [
+      {
+        "key": {
+          "testId": 1
+        },
+        "name": "PK_Test_Id",
+        "unique": true
+      }
+    ],
+    "writeConcern": {}
+  }
+]
