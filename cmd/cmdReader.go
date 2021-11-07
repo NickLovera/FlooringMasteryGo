@@ -1,4 +1,4 @@
-package cmdReader
+package cmd
 
 import (
 	mongo "github.com/NickLovera/mongo-utils"
